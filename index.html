@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Goals Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+        <h1>About My Goals</h1>
+        <p>These questions will help us understand your health goals and current well-being.</p>
+        <form id="health-goals-form">
+            <div class="form-group">
+                <label for="healthGoal">What is your primary health goal?</label>
+                <select id="healthGoal" name="healthGoal" required>
+                    <option value="" disabled selected>Select an answer</option>
+                    <option value="Sleep Improvement">Sleep Improvement</option>
+                    <option value="Nutrition">Nutrition</option>
+                    <option value="Weight Management">Weight Management</option>
+                    <option value="Increased Energy">Increased Energy</option>
+                    <option value="Fatigue Reduction">Fatigue Reduction</option>
+                    <option value="Mental Acuity/Clarity">Mental Acuity/Clarity</option>
+                    <option value="Immunity and Recovery">Immunity and Recovery</option>
+                    <option value="Healthy Aging">Healthy Aging</option>
+                    <option value="Longevity">Longevity</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sleepQuality">How would you rate your current sleep quality?</label>
+                <select id="sleepQuality" name="sleepQuality" required>
+                    <option value="" disabled selected>Select an answer</option>
+                    <option value="Excellent">Excellent</option>
+                    <option value="Good">Good</option>
+                    <option value="Average">Average</option>
+                    <option value="Poor">Poor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nutritionHabits">How would you describe your current nutritional habits?</label>
+                <select id="nutritionHabits" name="nutritionHabits" required>
+                    <option value="" disabled selected>Select an answer</option>
+                    <option value="Very Healthy">Very Healthy</option>
+                    <option value="Moderately Healthy">Moderately Healthy</option>
+                    <option value="Needs Improvement">Needs Improvement</option>
+                    <option value="Unhealthy">Unhealthy</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Are you currently trying to manage your weight?</label>
+                <div class="radio-group">
+                    <input type="radio" id="weightYes" name="weightManagement" value="Yes" required>
+                    <label for="weightYes" class="radio-label">Yes</label>
+                    <input type="radio" id="weightNo" name="weightManagement" value="No" required>
+                    <label for="weightNo" class="radio-label">No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="energyLevels">How would you describe your energy levels throughout the day?</label>
+                <select id="energyLevels" name="energyLevels" required>
+                    <option value="" disabled selected>Select an answer</option>
+                    <option value="Very High">Very High</option>
+                    <option value="High">High</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Low">Low</option>
+                    <option value="Very Low">Very Low</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Do you experience issues with mental acuity or clarity (e.g., depression, anxiety)?</label>
+                <div class="radio-group">
+                    <input type="radio" id="mentalYes" name="mentalAcuity" value="Yes" required>
+                    <label for="mentalYes" class="radio-label">Yes</label>
+                    <input type="radio" id="mentalNo" name="mentalAcuity" value="No" required>
+                    <label for="mentalNo" class="radio-label">No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="immunityRecovery">How would you rate your immune system and recovery time?</label>
+                <select id="immunityRecovery" name="immunityRecovery" required>
+                    <option value="" disabled selected>Select an answer</option>
+                    <option value="Very Strong">Very Strong</option>
+                    <option value="Strong">Strong</option>
+                    <option value="Average">Average</option>
+                    <option value="Weak">Weak</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Are you focused on healthy aging and longevity?</label>
+                <div class="radio-group">
+                    <input type="radio" id="agingYes" name="healthyAging" value="Yes" required>
+                    <label for="agingYes" class="radio-label">Yes</label>
+                    <input type="radio" id="agingNo" name="healthyAging" value="No" required>
+                    <label for="agingNo" class="radio-label">No</label>
+                </div>
+            </div>
+            <div class="form-group terms-group">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent" class="terms-label">
+                    By providing my information, I consent to being contacted via phone or email by product or service providers. I also agree to share the results of my scan for the purpose of being matched with health-improving products and services. I understand that sharing this information does not obligate me to purchase any products or services, and I retain the right to revoke this permission at any time.
+                </label>
+            </div>
+            <p class="agreement">By continuing, you acknowledge the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+            <button type="submit">CONTINUE</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
